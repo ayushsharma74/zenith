@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import {  Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 
 const geistMono = Geist_Mono({
@@ -22,20 +23,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={` ${geistMono.variable} antialiased   `}
-      >
-        <ThemeProvider
+    // <html lang="en">
+    //   <body
+    //     className={` ${geistMono.variable} antialiased   `}
+    //   >
+        /* <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          >
-
+          > */
+           <> 
+        <MaxWidthWrapper>
+          <Navbar />
         {children}
-        </ThemeProvider>
-      </body>
-    </html>
+        <Footer />
+        </MaxWidthWrapper>
+        </>
+        /* </ThemeProvider> */
+    /* //   </body> */
+    /* // </html> */
   );
 }
