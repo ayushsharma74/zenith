@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import {  Geist_Mono } from "next/font/google";
 import "./globals.css";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "@/components/Navbar";
 
 
 const geistMono = Geist_Mono({
