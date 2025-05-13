@@ -46,7 +46,7 @@ export default function Home() {
             </motion.p>
           </div>
         </div>
-        <Link href={"/documentation"}>
+        <Link href={"/docs"}>
           <button className="transition-all group flex items-center justify-center rounded-md bg-[#eb9ab4] dark:bg-[#522D38] dark:text-[#eb9ab4] border border-[#c62c5d] hover:border-[#c97993] px-3.5 py-2 text-sm font-semibold  text-[#d70044]  gap-2  cursor-pointer">
             Browse Components
             <AiTwotoneFire
@@ -79,7 +79,7 @@ export default function Home() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4 }} className="flex gap-3">
 
-        <Link href={"/documentation"}>
+        <Link href={"/docs"}>
           <button className="transition-all group flex items-center justify-center rounded-md bg-[#eb9ab4] dark:bg-[#522D38] dark:text-[#eb9ab4] border border-[#c62c5d] hover:border-[#c97993] px-3.5 py-2 text-sm font-semibold  text-[#d70044]  gap-2  cursor-pointer">
             Browse Components
             <AiTwotoneFire
