@@ -1,5 +1,4 @@
-import { Satisfy
-} from 'next/font/google'
+import { Satisfy, Montserrat } from "next/font/google";
 
-export const satisfy = Satisfy
-({weight: '400', subsets: ['latin']})
+export const satisfy = Satisfy({ weight: "400", subsets: ["latin"] });
+export const montserrat = Montserrat({ weight: "400", subsets: ["latin"] });

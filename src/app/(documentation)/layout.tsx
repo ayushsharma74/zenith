@@ -1,4 +1,5 @@
 import DocsWrapper from "@/components/DocsWrapper";
+import { montserrat } from "@/fonts/font";
 
 export default function DocumentationLayout({
     children,
@@ -6,7 +7,7 @@ export default function DocumentationLayout({
     children: React.ReactNode;
 }) {
     
-    return <div>
+    return <div className={`${montserrat.className}`}>
         <DocsWrapper>{children}</DocsWrapper>
     </div>;
 }
