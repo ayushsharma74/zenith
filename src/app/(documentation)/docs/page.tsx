@@ -1,6 +1,6 @@
 "use client";
 
-import { useScroll, useInView } from "motion/react";
+import { useScroll, useInView, motion } from "motion/react";
 import { useEffect, useRef } from "react";
 
 export default function Page() {
@@ -20,12 +20,12 @@ export default function Page() {
         <div className="h-[100vh]" ref={ref2} >Getting Started</div>
         <div className="h-[100vh]" ref={ref3}>Sec3</div>
       </div>
-      <div className="fixed right-0">
+      <div className="fixed right-10 p-5">
         <h1>On this page</h1>
         <ul>
-          <li style={inView1 ? { color: "red" } : {}}>Installation</li>
-          <li style={inView2 ? { color: "red" } : {}}>Getting Started</li>
-          <li style={inView3 ? { color: "red" } : {}}>Sec 3</li>
+          <motion.li  animate={inView1 ? {x: "10px"}: {}}>Installation</motion.li>
+          <motion.li animate={inView2 ? {x: "10px"} : {}}>Getting Started</motion.li>
+          <motion.li  animate={inView3 ? {x: "10px"} : {}}>Sec 3</motion.li>
         </ul>
       </div>
     </div>
